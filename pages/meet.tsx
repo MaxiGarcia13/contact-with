@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { Meet } from '../interfaces/Meet';
 import { useRouter } from 'next/router';
 
-const MeetComponent = dynamic(() => import('../components/Meet'));
+const MeetComponent = dynamic(() => import('../components/Meet'), { ssr: false });
 
 import type { NextPage } from 'next';
 
